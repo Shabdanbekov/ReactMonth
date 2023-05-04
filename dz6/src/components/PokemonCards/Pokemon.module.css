@@ -1,0 +1,30 @@
+/* @import "./theme/dark.css";
+@import "./theme/light.css"; */
+
+.pokemonCard {
+  width: 250px;
+  height: 350px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: var(--card-background);
+  text-align: center;
+}
+
+.pokStyle {
+  width: 200px;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.pokemonName {
+  font-size: 30px;
+}
+
+.insideBlock {
+  height: 50px;
+  background-color: rgb(112, 119, 230);
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

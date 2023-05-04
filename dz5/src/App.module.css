@@ -1,0 +1,33 @@
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.selectStyle {
+  width: 90px;
+  display: flex;
+  height: 30px;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.searchStyle {
+  height: 30px;
+  width: 40vh;
+  border-radius: 7px;
+}
+.deleteAll {
+  width: 90px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+}
