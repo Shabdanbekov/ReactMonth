@@ -11,7 +11,7 @@ export const fetchPokemons = async () => {
         return {
           id: response.data.id,
           name: response.data.name,
-          image: response.data.sprites.front_default,
+          image: response.data.sprites.other["official-artwork"].front_default,
         };
       })
     );
