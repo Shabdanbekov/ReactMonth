@@ -16,6 +16,8 @@
   margin-bottom: 10px;
   background-color: var(--card-background);
   text-align: center;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .pokemonName {
