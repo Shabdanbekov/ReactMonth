@@ -1,0 +1,42 @@
+@import "./components/theme/dark.css";
+@import "./components/theme/light.css";
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pokemonList {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.mainPage {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
+  text-decoration: none;
+  margin-left: 40%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title:hover {
+  color: rgb(101, 103, 228);
+}
+
+.aboutPage {
+  font-size: 30px;
+  color: green;
+  text-decoration: none;
+  margin-left: 350px;
+}

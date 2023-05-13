@@ -1,0 +1,46 @@
+/* @import "./theme/dark.css";
+@import "./theme/light.css"; */
+
+.pokStyle {
+  width: 250px;
+  height: 250px;
+  align-items: center;
+  margin-top: 50px;
+  animation: head-shake 1s ease-in-out infinite;
+}
+
+.pokemonCard {
+  width: 250px;
+  height: 350px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: var(--card-background);
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.pokemonName {
+  font-size: 30px;
+}
+
+.insideBlock {
+  height: 50px;
+  background-color: rgb(112, 119, 230);
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes head-shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
