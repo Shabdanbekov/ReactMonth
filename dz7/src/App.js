@@ -5,6 +5,7 @@ import React from "react";
 import About from "./components/About/About";
 import { useState } from "react";
 import SwitchTheme from "./components/SwitchTheme/SwitchTheme";
+import AboutPage from "./components/AboutPage/AboutPage";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -25,6 +26,9 @@ function App() {
       <Link to="/" className="mainPage">
         POKEMONS
       </Link>
+      <Link to="AboutPage" className="aboutPage">
+        ABOUTPAGE
+      </Link>
       <SwitchTheme
         className="changeTheme"
         onChange={handleSwitchChange}
@@ -33,6 +37,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/About/:id" element={<About />} />
+        <Route path="/AboutPage/" element={<AboutPage />} />
       </Routes>
     </div>
   );

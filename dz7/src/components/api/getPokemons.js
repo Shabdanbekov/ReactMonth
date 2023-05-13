@@ -2,10 +2,13 @@ import axios from "axios";
 
 const BASE_URL = "https://pokeapi.co/api/v2/";
 
-export const fetchPokemons = async (limit, offset) => {
+export const fetchPokemons = async (limit, offset, generations) => {
   try {
+    const generationParam = generations
+      ? `&generation=${generations.join(",")}`
+      : "";
     const { data } = await axios.get(
-      BASE_URL + `pokemon?limit=${limit}&offset=${offset}`
+      BASE_URL + `pokemon?limit=${limit}&offset=${offset}${generationParam}`
     );
     const pokemonList = await Promise.all(
       data.results.map(async (pokemon) => {

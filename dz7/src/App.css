@@ -33,3 +33,10 @@
 .title:hover {
   color: rgb(101, 103, 228);
 }
+
+.aboutPage {
+  font-size: 30px;
+  color: green;
+  text-decoration: none;
+  margin-left: 350px;
+}
